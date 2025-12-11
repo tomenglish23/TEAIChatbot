@@ -1,0 +1,185 @@
+PS C:\B\AI_TEAI\TEAIChatbot> ./Setup-TeaiChatbot.ps1
+Root: C:\B\AI_TEAI\TEAIChatbot
+Created dir: src
+Created dir: tests
+Created dir: tools
+Created dir: ui
+Created dir: src\TEAI.Chatbot.Core
+Creating classlib: TEAI.Chatbot.Core at src\TEAI.Chatbot.Core
+The template "Class Library" was created successfully.
+
+Processing post-creation actions...
+Restoring C:\B\AI_TEAI\TEAIChatbot\src\TEAI.Chatbot.Core\TEAI.Chatbot.Core.csproj:
+Restore succeeded.
+
+
+Created dir: src\TEAI.Chatbot.Storage.Abstractions
+Creating classlib: TEAI.Chatbot.Storage.Abstractions at src\TEAI.Chatbot.Storage.Abstractions
+The template "Class Library" was created successfully.
+
+Processing post-creation actions...
+Restoring C:\B\AI_TEAI\TEAIChatbot\src\TEAI.Chatbot.Storage.Abstractions\TEAI.Chatbot.Storage.Abstractions.csproj:
+Restore succeeded.
+
+
+Created dir: src\TEAI.Chatbot.Storage.FileSystem
+Creating classlib: TEAI.Chatbot.Storage.FileSystem at src\TEAI.Chatbot.Storage.FileSystem
+The template "Class Library" was created successfully.
+
+Processing post-creation actions...
+Restoring C:\B\AI_TEAI\TEAIChatbot\src\TEAI.Chatbot.Storage.FileSystem\TEAI.Chatbot.Storage.FileSystem.csproj:
+Restore succeeded.
+
+
+Created dir: src\TEAI.Chatbot.Adapters.Channels
+Creating classlib: TEAI.Chatbot.Adapters.Channels at src\TEAI.Chatbot.Adapters.Channels
+The template "Class Library" was created successfully.
+
+Processing post-creation actions...
+Restoring C:\B\AI_TEAI\TEAIChatbot\src\TEAI.Chatbot.Adapters.Channels\TEAI.Chatbot.Adapters.Channels.csproj:
+Restore succeeded.
+
+
+Created dir: src\TEAI.Chatbot.Adapters.Llm
+Creating classlib: TEAI.Chatbot.Adapters.Llm at src\TEAI.Chatbot.Adapters.Llm
+The template "Class Library" was created successfully.
+
+Processing post-creation actions...
+Restoring C:\B\AI_TEAI\TEAIChatbot\src\TEAI.Chatbot.Adapters.Llm\TEAI.Chatbot.Adapters.Llm.csproj:
+Restore succeeded.
+
+
+Created dir: src\TEAI.Chatbot.Adapters.LangGraph
+Creating classlib: TEAI.Chatbot.Adapters.LangGraph at src\TEAI.Chatbot.Adapters.LangGraph
+The template "Class Library" was created successfully.
+
+Processing post-creation actions...
+Restoring C:\B\AI_TEAI\TEAIChatbot\src\TEAI.Chatbot.Adapters.LangGraph\TEAI.Chatbot.Adapters.LangGraph.csproj:
+Restore succeeded.
+
+
+Created dir: src\TEAI.Chatbot.Ingress.Api
+Creating minimal web project: TEAI.Chatbot.Ingress.Api at src\TEAI.Chatbot.Ingress.Api
+The template "ASP.NET Core Empty" was created successfully.
+
+Processing post-creation actions...
+Restoring C:\B\AI_TEAI\TEAIChatbot\src\TEAI.Chatbot.Ingress.Api\TEAI.Chatbot.Ingress.Api.csproj:
+Restore succeeded.
+
+
+Created dir: src\TEAI.Chatbot.Owner.Api
+Creating minimal web project: TEAI.Chatbot.Owner.Api at src\TEAI.Chatbot.Owner.Api
+The template "ASP.NET Core Empty" was created successfully.
+
+Processing post-creation actions...
+Restoring C:\B\AI_TEAI\TEAIChatbot\src\TEAI.Chatbot.Owner.Api\TEAI.Chatbot.Owner.Api.csproj:
+Restore succeeded.
+
+
+Created dir: src\TEAI.Chatbot.Ingress.Functions
+Creating classlib: TEAI.Chatbot.Ingress.Functions at src\TEAI.Chatbot.Ingress.Functions
+The template "Class Library" was created successfully.
+
+Processing post-creation actions...
+Restoring C:\B\AI_TEAI\TEAIChatbot\src\TEAI.Chatbot.Ingress.Functions\TEAI.Chatbot.Ingress.Functions.csproj:
+Restore succeeded.
+
+
+Created dir: tests\TEAI.Chatbot.Core.Tests
+Creating xUnit test project: TEAI.Chatbot.Core.Tests at tests\TEAI.Chatbot.Core.Tests
+The template "xUnit Test Project" was created successfully.
+
+Processing post-creation actions...
+Restoring C:\B\AI_TEAI\TEAIChatbot\tests\TEAI.Chatbot.Core.Tests\TEAI.Chatbot.Core.Tests.csproj:
+Restore succeeded.
+
+
+Created dir: tests\TEAI.Chatbot.Ingress.Tests
+Creating xUnit test project: TEAI.Chatbot.Ingress.Tests at tests\TEAI.Chatbot.Ingress.Tests
+The template "xUnit Test Project" was created successfully.
+
+Processing post-creation actions...
+Restoring C:\B\AI_TEAI\TEAIChatbot\tests\TEAI.Chatbot.Ingress.Tests\TEAI.Chatbot.Ingress.Tests.csproj:
+Restore succeeded.
+
+
+Created dir: tests\TEAI.Chatbot.Owner.Tests
+Creating xUnit test project: TEAI.Chatbot.Owner.Tests at tests\TEAI.Chatbot.Owner.Tests
+The template "xUnit Test Project" was created successfully.
+
+Processing post-creation actions...
+Restoring C:\B\AI_TEAI\TEAIChatbot\tests\TEAI.Chatbot.Owner.Tests\TEAI.Chatbot.Owner.Tests.csproj:
+Restore succeeded.
+
+
+Removed template file: src\TEAI.Chatbot.Core\Class1.cs
+Removed template file: src\TEAI.Chatbot.Storage.Abstractions\Class1.cs
+Removed template file: src\TEAI.Chatbot.Storage.FileSystem\Class1.cs
+Removed template file: src\TEAI.Chatbot.Adapters.Channels\Class1.cs
+Removed template file: src\TEAI.Chatbot.Adapters.Llm\Class1.cs
+Removed template file: src\TEAI.Chatbot.Adapters.LangGraph\Class1.cs
+Removed template file: src\TEAI.Chatbot.Ingress.Api\Program.cs
+Removed template file: src\TEAI.Chatbot.Owner.Api\Program.cs
+Removed template file: src\TEAI.Chatbot.Ingress.Functions\Class1.cs
+Created dir: src\TEAI.Chatbot.Core\Models
+Created dir: src\TEAI.Chatbot.Core\Flows
+Created dir: src\TEAI.Chatbot.Core\Orchestration
+Created tools\FakeSocialEventRunner.ps1 stub
+Solution exists, skipping: C:\B\AI_TEAI\TEAIChatbot\TEAIChatbot.Server.sln
+Creating solution: TEAIChatbot.Azure
+The template "Solution File" was created successfully.
+
+Creating solution: TEAIChatbot.Tests
+The template "Solution File" was created successfully.
+
+Creating solution: TEAIChatbot.Client
+The template "Solution File" was created successfully.
+
+Adding src\TEAI.Chatbot.Core\TEAI.Chatbot.Core.csproj to TEAIChatbot.Server.sln
+Project `src\TEAI.Chatbot.Core\TEAI.Chatbot.Core.csproj` added to the solution.
+Adding src\TEAI.Chatbot.Storage.Abstractions\TEAI.Chatbot.Storage.Abstractions.csproj to TEAIChatbot.Server.sln
+Project `src\TEAI.Chatbot.Storage.Abstractions\TEAI.Chatbot.Storage.Abstractions.csproj` added to the solution.
+Adding src\TEAI.Chatbot.Storage.FileSystem\TEAI.Chatbot.Storage.FileSystem.csproj to TEAIChatbot.Server.sln
+Project `src\TEAI.Chatbot.Storage.FileSystem\TEAI.Chatbot.Storage.FileSystem.csproj` added to the solution.
+Adding src\TEAI.Chatbot.Adapters.Channels\TEAI.Chatbot.Adapters.Channels.csproj to TEAIChatbot.Server.sln
+Project `src\TEAI.Chatbot.Adapters.Channels\TEAI.Chatbot.Adapters.Channels.csproj` added to the solution.
+Adding src\TEAI.Chatbot.Adapters.Llm\TEAI.Chatbot.Adapters.Llm.csproj to TEAIChatbot.Server.sln
+Project `src\TEAI.Chatbot.Adapters.Llm\TEAI.Chatbot.Adapters.Llm.csproj` added to the solution.
+Adding src\TEAI.Chatbot.Adapters.LangGraph\TEAI.Chatbot.Adapters.LangGraph.csproj to TEAIChatbot.Server.sln
+Project `src\TEAI.Chatbot.Adapters.LangGraph\TEAI.Chatbot.Adapters.LangGraph.csproj` added to the solution.
+Adding src\TEAI.Chatbot.Ingress.Api\TEAI.Chatbot.Ingress.Api.csproj to TEAIChatbot.Server.sln
+Project `src\TEAI.Chatbot.Ingress.Api\TEAI.Chatbot.Ingress.Api.csproj` added to the solution.
+Adding src\TEAI.Chatbot.Owner.Api\TEAI.Chatbot.Owner.Api.csproj to TEAIChatbot.Server.sln
+Project `src\TEAI.Chatbot.Owner.Api\TEAI.Chatbot.Owner.Api.csproj` added to the solution.
+Adding src\TEAI.Chatbot.Core\TEAI.Chatbot.Core.csproj to TEAIChatbot.Azure.sln
+Project `src\TEAI.Chatbot.Core\TEAI.Chatbot.Core.csproj` added to the solution.
+Adding src\TEAI.Chatbot.Adapters.Llm\TEAI.Chatbot.Adapters.Llm.csproj to TEAIChatbot.Azure.sln
+Project `src\TEAI.Chatbot.Adapters.Llm\TEAI.Chatbot.Adapters.Llm.csproj` added to the solution.
+Adding src\TEAI.Chatbot.Ingress.Functions\TEAI.Chatbot.Ingress.Functions.csproj to TEAIChatbot.Azure.sln
+Project `src\TEAI.Chatbot.Ingress.Functions\TEAI.Chatbot.Ingress.Functions.csproj` added to the solution.
+Adding tests\TEAI.Chatbot.Core.Tests\TEAI.Chatbot.Core.Tests.csproj to TEAIChatbot.Tests.sln
+Project `tests\TEAI.Chatbot.Core.Tests\TEAI.Chatbot.Core.Tests.csproj` added to the solution.
+Adding tests\TEAI.Chatbot.Ingress.Tests\TEAI.Chatbot.Ingress.Tests.csproj to TEAIChatbot.Tests.sln
+Project `tests\TEAI.Chatbot.Ingress.Tests\TEAI.Chatbot.Ingress.Tests.csproj` added to the solution.
+Adding tests\TEAI.Chatbot.Owner.Tests\TEAI.Chatbot.Owner.Tests.csproj to TEAIChatbot.Tests.sln
+Project `tests\TEAI.Chatbot.Owner.Tests\TEAI.Chatbot.Owner.Tests.csproj` added to the solution.
+Adding src\TEAI.Chatbot.Core\TEAI.Chatbot.Core.csproj to TEAIChatbot.Tests.sln
+Project `src\TEAI.Chatbot.Core\TEAI.Chatbot.Core.csproj` added to the solution.
+Adding src\TEAI.Chatbot.Ingress.Api\TEAI.Chatbot.Ingress.Api.csproj to TEAIChatbot.Tests.sln
+Project `src\TEAI.Chatbot.Ingress.Api\TEAI.Chatbot.Ingress.Api.csproj` added to the solution.
+Adding src\TEAI.Chatbot.Owner.Api\TEAI.Chatbot.Owner.Api.csproj to TEAIChatbot.Tests.sln
+Project `src\TEAI.Chatbot.Owner.Api\TEAI.Chatbot.Owner.Api.csproj` added to the solution.
+
+=== Summary ===
+Server solution: TEAIChatbot.Server.sln
+Azure solution:  TEAIChatbot.Azure.sln
+Tests solution:  TEAIChatbot.Tests.sln
+Client solution: TEAIChatbot.Client.sln (empty shell for React)
+
+Try:
+  dotnet build TEAIChatbot.Server.sln
+  dotnet test  TEAIChatbot.Tests.sln
+Then:
+  dotnet run --project src\TEAI.Chatbot.Ingress.Api\TEAI.Chatbot.Ingress.Api.csproj
+  pwsh .\tools\FakeSocialEventRunner.ps1
+PS C:\B\AI_TEAI\TEAIChatbot>

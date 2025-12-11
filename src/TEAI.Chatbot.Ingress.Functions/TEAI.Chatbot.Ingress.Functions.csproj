@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\TEAI.Chatbot.Core\TEAI.Chatbot.Core.csproj" />
+    <ProjectReference Include="..\TEAI.Chatbot.Adapters.Llm\TEAI.Chatbot.Adapters.Llm.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

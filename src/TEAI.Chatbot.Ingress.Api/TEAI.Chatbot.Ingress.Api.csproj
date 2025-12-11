@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\TEAI.Chatbot.Core\TEAI.Chatbot.Core.csproj" />
+    <ProjectReference Include="..\TEAI.Chatbot.Adapters.Channels\TEAI.Chatbot.Adapters.Channels.csproj" />
+    <ProjectReference Include="..\TEAI.Chatbot.Adapters.Llm\TEAI.Chatbot.Adapters.Llm.csproj" />
+    <ProjectReference Include="..\TEAI.Chatbot.Storage.Abstractions\TEAI.Chatbot.Storage.Abstractions.csproj" />
+    <ProjectReference Include="..\TEAI.Chatbot.Storage.FileSystem\TEAI.Chatbot.Storage.FileSystem.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+</Project>

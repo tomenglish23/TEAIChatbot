@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{157D363B-93F4-43C7-B6A1-34D4D23D695D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEAI.Chatbot.Core.Tests", "tests\TEAI.Chatbot.Core.Tests\TEAI.Chatbot.Core.Tests.csproj", "{9EE6135D-B65C-4237-BC3E-5F1CE2F197C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEAI.Chatbot.Ingress.Tests", "tests\TEAI.Chatbot.Ingress.Tests\TEAI.Chatbot.Ingress.Tests.csproj", "{661C199B-3766-41E2-896D-B351805D116F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEAI.Chatbot.Owner.Tests", "tests\TEAI.Chatbot.Owner.Tests\TEAI.Chatbot.Owner.Tests.csproj", "{FAEF528F-E290-46FB-AF32-4D6F4068D2CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9A250EE1-AC30-4190-A50C-1A0121E86A76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEAI.Chatbot.Core", "src\TEAI.Chatbot.Core\TEAI.Chatbot.Core.csproj", "{E53B515E-1F32-42ED-AF9E-CE72A999288E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEAI.Chatbot.Ingress.Api", "src\TEAI.Chatbot.Ingress.Api\TEAI.Chatbot.Ingress.Api.csproj", "{0D12764C-4D2B-4CC4-868C-7235CCD2F5EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEAI.Chatbot.Owner.Api", "src\TEAI.Chatbot.Owner.Api\TEAI.Chatbot.Owner.Api.csproj", "{071A7D5D-B4CF-4EE9-91CF-0790CE5B23BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EE6135D-B65C-4237-BC3E-5F1CE2F197C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EE6135D-B65C-4237-BC3E-5F1CE2F197C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EE6135D-B65C-4237-BC3E-5F1CE2F197C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EE6135D-B65C-4237-BC3E-5F1CE2F197C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{661C199B-3766-41E2-896D-B351805D116F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{661C199B-3766-41E2-896D-B351805D116F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{661C199B-3766-41E2-896D-B351805D116F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{661C199B-3766-41E2-896D-B351805D116F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAEF528F-E290-46FB-AF32-4D6F4068D2CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAEF528F-E290-46FB-AF32-4D6F4068D2CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAEF528F-E290-46FB-AF32-4D6F4068D2CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAEF528F-E290-46FB-AF32-4D6F4068D2CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E53B515E-1F32-42ED-AF9E-CE72A999288E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E53B515E-1F32-42ED-AF9E-CE72A999288E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E53B515E-1F32-42ED-AF9E-CE72A999288E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E53B515E-1F32-42ED-AF9E-CE72A999288E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D12764C-4D2B-4CC4-868C-7235CCD2F5EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D12764C-4D2B-4CC4-868C-7235CCD2F5EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D12764C-4D2B-4CC4-868C-7235CCD2F5EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D12764C-4D2B-4CC4-868C-7235CCD2F5EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{071A7D5D-B4CF-4EE9-91CF-0790CE5B23BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{071A7D5D-B4CF-4EE9-91CF-0790CE5B23BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{071A7D5D-B4CF-4EE9-91CF-0790CE5B23BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{071A7D5D-B4CF-4EE9-91CF-0790CE5B23BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9EE6135D-B65C-4237-BC3E-5F1CE2F197C1} = {157D363B-93F4-43C7-B6A1-34D4D23D695D}
+		{661C199B-3766-41E2-896D-B351805D116F} = {157D363B-93F4-43C7-B6A1-34D4D23D695D}
+		{FAEF528F-E290-46FB-AF32-4D6F4068D2CA} = {157D363B-93F4-43C7-B6A1-34D4D23D695D}
+		{E53B515E-1F32-42ED-AF9E-CE72A999288E} = {9A250EE1-AC30-4190-A50C-1A0121E86A76}
+		{0D12764C-4D2B-4CC4-868C-7235CCD2F5EC} = {9A250EE1-AC30-4190-A50C-1A0121E86A76}
+		{071A7D5D-B4CF-4EE9-91CF-0790CE5B23BD} = {9A250EE1-AC30-4190-A50C-1A0121E86A76}
+	EndGlobalSection
+EndGlobal

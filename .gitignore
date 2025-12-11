@@ -1,0 +1,10 @@
+﻿bin/
+obj/
+.vs/
+*.user
+*.suo
+*.log
+*.sqlite
+*.cache
+*.DS_Store
+launchSettings.json

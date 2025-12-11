@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net" modified="2025-12-08T12:00:00Z" agent="5.0" version="22.0.0" editor="draw.io">
+  <diagram id="TEAI_Swimlane" name="TEAIChatbot DI Swimlanes">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Swimlane: External Clients -->
+        <mxCell id="lane_clients" value="External Clients" style="swimlane=1;childLayout=stackLayout;horizontal=0;startSize=30;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="260" height="700" as="geometry"/>
+        </mxCell>
+
+        <!-- Swimlane: Function Host -->
+        <mxCell id="lane_host" value="Function Host (Azure Functions)" style="swimlane=1;childLayout=stackLayout;horizontal=0;startSize=30;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="260" height="700" as="geometry"/>
+        </mxCell>
+
+        <!-- Swimlane: Domain Logic -->
+        <mxCell id="lane_domain" value="Domain Logic (Injected Services)" style="swimlane=1;childLayout=stackLayout;horizontal=0;startSize=30;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="600" y="40" width="260" height="700" as="geometry"/>
+        </mxCell>
+
+        <!-- Swimlane: Storage & Config -->
+        <mxCell id="lane_storage" value="Storage &amp; Config" style="swimlane=1;childLayout=stackLayout;horizontal=0;startSize=30;rounded=0;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="880" y="40" width="260" height="700" as="geometry"/>
+        </mxCell>
+
+        <!-- External client elements -->
+        <mxCell id="clients_box" value="FB Page&#10;LinkedIn&#10;Test Console" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="lane_clients">
+          <mxGeometry x="20" y="60" width="200" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- IngressFunction -->
+        <mxCell id="ingress_box" value="IngressFunction&#10;(HTTP / Webhook)&#10;[Scoped]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=11;" vertex="1" parent="lane_host">
+          <mxGeometry x="20" y="60" width="200" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- SocialEventHandler -->
+        <mxCell id="handler_box" value="SocialEventHandler&#10;Orchestrator&#10;[Scoped]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="lane_host">
+          <mxGeometry x="20" y="190" width="200" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- IChatSessionRepository -->
+        <mxCell id="repo_box" value="IChatSessionRepository&#10;(Table / SQL / Stub)&#10;[Scoped]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" vertex="1" parent="lane_domain">
+          <mxGeometry x="20" y="60" width="210" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- IFlowEngine -->
+        <mxCell id="engine_box" value="IFlowEngine&#10;(JsonFlowEngine / Stub / RecordingStub)&#10;[Singleton]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="lane_domain">
+          <mxGeometry x="20" y="210" width="210" height="110" as="geometry"/>
+        </mxCell>
+
+        <!-- Storage box -->
+        <mxCell id="storage_box" value="Storage&#10;(Table, SQL, Blob, External APIs)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;" vertex="1" parent="lane_storage">
+          <mxGeometry x="20" y="60" width="210" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Config / flows box -->
+        <mxCell id="config_box" value="Flow Definitions&#10;JSON flows, settings" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;" vertex="1" parent="lane_storage">
+          <mxGeometry x="20" y="210" width="210" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="edge_clients_ingress" edge="1" parent="1" source="clients_box" target="ingress_box" style="endArrow=block;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_ingress_handler" edge="1" parent="1" source="ingress_box" target="handler_box" style="endArrow=block;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_handler_repo" edge="1" parent="1" source="handler_box" target="repo_box" style="endArrow=block;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_handler_engine" edge="1" parent="1" source="handler_box" target="engine_box" style="endArrow=block;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_repo_storage" edge="1" parent="1" source="repo_box" target="storage_box" style="endArrow=block;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_engine_config" edge="1" parent="1" source="engine_box" target="config_box" style="endArrow=block;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+
