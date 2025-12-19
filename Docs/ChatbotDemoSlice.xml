@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="TEAIChatbot Demo Slice">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="user" value="User" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="80" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="fb" value="Facebook Page / Graph API" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="200" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="harness" value="FakeSocialEventRunner.ps1&#10;(PowerShell harness)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="190" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="norm" value="NormalizedEvent" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="90" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ingress" value="IngressHandler.cs" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="190" width="140" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="flowctx" value="FlowContext" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="310" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ai" value="OpenAiChatClient&#10;(stub)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="190" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="flowres" value="FlowResult" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="310" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="outbound" value="OutboundMessage" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="200" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" style="endArrow=block;rounded=0;html=1;" edge="1" parent="1" source="user" target="fb">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e2" style="endArrow=block;rounded=0;html=1;" edge="1" parent="1" source="fb" target="harness">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e3" style="endArrow=block;rounded=0;html=1;" edge="1" parent="1" source="harness" target="norm">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e4" style="endArrow=block;rounded=0;html=1;" edge="1" parent="1" source="norm" target="ingress">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e5" style="endArrow=block;rounded=0;html=1;" edge="1" parent="1" source="ingress" target="flowctx">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e6" style="endArrow=block;rounded=0;html=1;" edge="1" parent="1" source="ingress" target="ai">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e7" style="endArrow=block;rounded=0;html=1;" edge="1" parent="1" source="ai" target="flowres">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e8" style="endArrow=block;rounded=0;html=1;" edge="1" parent="1" source="flowres" target="ingress">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e9" style="endArrow=block;rounded=0;html=1;" edge="1" parent="1" source="ingress" target="outbound">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e10" style="endArrow=block;rounded=0;html=1;" edge="1" parent="1" source="outbound" target="harness">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e11" style="endArrow=block;rounded=0;html=1;" edge="1" parent="1" source="harness" target="fb">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+
